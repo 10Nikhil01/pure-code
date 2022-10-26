@@ -3,16 +3,12 @@ import {Grid, Typography, List, ListItem } from "@mui/material";
 
 const orderID = [
   { id: 1, orderid: "#5656", ordertime: "a day" },
-  { id: 1, orderid: "#5657", ordertime: "a day" },
-  { id: 1, orderid: "#5658", ordertime: "two days" },
-  { id: 1, orderid: "#5654", ordertime: "a day" },
-  { id: 1, orderid: "#5634", ordertime: "two days" },
-  { id: 1, orderid: "#5216", ordertime: "a day" },
-  { id: 1, orderid: "#5656", ordertime: "two days" },
-  { id: 1, orderid: "#5896", ordertime: "a day" },
-  { id: 1, orderid: "#5096", ordertime: "two days" },
-  { id: 1, orderid: "#5876", ordertime: "a day" },
-  { id: 1, orderid: "#5006", ordertime: "two days" },
+  { id: 2, orderid: "#5657", ordertime: "a day" },
+  { id: 3, orderid: "#5658", ordertime: "two days" },
+  { id: 4, orderid: "#5654", ordertime: "a day" },
+  { id: 5, orderid: "#5634", ordertime: "two days" },
+  { id: 6, orderid: "#5216", ordertime: "a day" },
+  { id: 7, orderid: "#5656", ordertime: "two days" }
 ];
 
 function Activity() {
@@ -43,7 +39,7 @@ function Activity() {
         }}
       >
         {orderID.map((item) => (
-          <ListItem
+          <ListItem key={item.id}
             sx={{
               display: "flex",
               flexDirection: "column",

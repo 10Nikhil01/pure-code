@@ -57,7 +57,7 @@ function AppBar() {
     );
   };
   return (
-      <Grid container columnSpacing={4} sx={{maxWidth:'100%', marginTop:'16px'}} justifyContent="flex-end" >
+      <Grid container columnGap={2} rowGap={2} sx={{maxWidth:'100%', marginTop:'16px'}} justifyContent="flex-end" >
         <Grid item xs={10} md={1}>
           <Button
             variant="text"
@@ -92,7 +92,7 @@ function AppBar() {
             </Select>
           </FormControl>
         </Grid>
-        <Grid item xs={10} md={2} >
+        <Grid item xs={11} md={2} >
           <Box sx={{ display: "flex", alignItems: "center", justifyContent:"center", backgroundColor:"#ffffff", borderRadius:"5px" }}>
             <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
             <TextField
